@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "list",
+      "type": "rt_lldb",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/target/debug/${workspaceFolderBasename}",
+      "stopAtEntry": true,
+      "args": [
+        "list"
+      ]
+    },
+    {
+      "name": "add",
+      "type": "rt_lldb",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/target/debug/${workspaceFolderBasename}",
+      "args": [
+        "add",
+        "test",
+        "test"
+      ]
+    }
+  ]
+}
